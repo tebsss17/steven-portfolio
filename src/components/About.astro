@@ -1,3 +1,7 @@
+---
+import { FolderCode, Code, GraduationCap, Layers } from '@lucide/astro';
+---
+
 <div id="about" class="flex justify-center p-8">
     <div class="max-w-7xl w-full">
 
@@ -16,7 +20,7 @@
 
                 <div class="group flex items-center gap-5 rounded-2xl border border-white/10 bg-gradient-to-br from-[#0A0C12] to-[#131722] p-6 min-h-32 transition-all duration-300 hover:-translate-y-2 hover:border-[#3B82F6]/40">
                     <div class=" rounded-xl p-4 bg-[#5290DA]/15 group-hover:bg-[#5290DA] duration-300 transition-colors">
-                        <x-lucide-folder-code class="size-8 text-[#5290DA] group-hover:text-white"/>
+                        <FolderCode class="size-8 text-[#5290DA] group-hover:text-white"/>
                     </div>
 
 
@@ -28,7 +32,7 @@
 
                 <div class="group flex items-center gap-5 rounded-2xl border border-white/10 bg-gradient-to-br from-[#0A0C12] to-[#131722] p-6 min-h-32 transition-all duration-300 hover:-translate-y-2 hover:border-[#3B82F6]/40">
                     <div class=" rounded-xl p-4 bg-[#5290DA]/15 group-hover:bg-[#5290DA] duration-300 transition-colors">
-                        <x-lucide-code class="size-8 text-[#5290DA] group-hover:text-white"/>
+                        <Code class="size-8 text-[#5290DA] group-hover:text-white"/>
                     </div>
 
 
@@ -40,7 +44,7 @@
 
                 <div class="group flex items-center gap-5 rounded-2xl border border-white/10 bg-gradient-to-br from-[#0A0C12] to-[#131722] p-6 min-h-32 transition-all duration-300 hover:-translate-y-2 hover:border-[#3B82F6]/40">
                     <div class=" rounded-xl p-4 bg-[#5290DA]/15 group-hover:bg-[#5290DA] duration-300 transition-colors">
-                        <x-lucide-graduation-cap class="size-8 text-[#5290DA] group-hover:text-white"/>
+                        <GraduationCap class="size-8 text-[#5290DA] group-hover:text-white"/>
                     </div>
 
 
@@ -52,7 +56,7 @@
 
                 <div class="group flex items-center gap-5 rounded-2xl border border-white/10 bg-gradient-to-br from-[#0A0C12] to-[#131722] p-6 min-h-32 transition-all duration-300 hover:-translate-y-2 hover:border-[#3B82F6]/40">
                     <div class=" rounded-xl p-4 bg-[#5290DA]/15 group-hover:bg-[#5290DA] duration-300 transition-colors">
-                        <x-lucide-layers class="size-8 text-[#5290DA] group-hover:text-white"/>
+                        <Layers class="size-8 text-[#5290DA] group-hover:text-white"/>
                     </div>
 
 
@@ -119,6 +123,14 @@
                         <img src="images/alpinejs.svg" alt="alpinejs" class="size-6">
 
                         <span class="text-sm font-medium text-main">Alpine.js</span>
+                    </div>
+
+                    <div
+                        class="flex items-center gap-3 rounded-2xl border border-white/10 bg-[#131722] transition-all duration-300 p-4 hover:-translate-y-2 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                        <img src="images/astro.svg" alt="alpinejs" class="size-6">
+
+                        <span class="text-sm font-medium text-main">Astro.js</span>
                     </div>
 
                     <div
