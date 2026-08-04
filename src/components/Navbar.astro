@@ -1,7 +1,11 @@
-<div class="flex items-center justify-center fixed top-6 z-50 left-0 right-0 backdrop-blur-2xl">
+---
+import { Menu, X } from  '@lucide/astro';
+---
+
+<div class="flex items-center justify-center fixed top-6 z-50 left-0 right-0">
 
     <!-- Desktop Version  -->
-    <nav class="hidden md:flex justify-between items-center w-full border-2 border-white/10 px-10 py-6 rounded-full z-50 max-w-7xl ">
+    <nav class="hidden md:flex justify-between items-center w-full border border-white/10 px-10 py-4 rounded-full z-50 max-w-7xl backdrop-blur-2xl">
         <div>
             <a href="#home">
                 <img src="/images/laravel.svg" alt="" class="size-10">
@@ -16,7 +20,51 @@
     </nav>
 
     <!-- Mobile Version -->
-    <nav class="md:hidden">
+   <nav class="md:hidden w-full max-w-sm px-6">
 
+        <div class="flex items-center justify-between rounded-full border border-white/10 backdrop-blur-xl px-6 py-4">
+
+            <img src="/images/laravel.svg" class="h-8">
+
+            <button id="menuBtn">
+                <Menu id="menuIcon" class="size-7" />
+                <X id="closeIcon" class="hidden size-7" />
+            </button>
+
+        </div>
+
+        <div
+            class="mt-4 rounded-2xl border border-white/10 bg-[#050507]/90 backdrop-blur-xl p-6 duration-300 transition-all pointer-events-none opacity-0  scale-95"
+            id="mobileMenu"
+        >
+            <a href="#about" class="block py-3">About</a>
+            <a href="#projects" class="block py-3">Projects</a>
+            <a href="#contact" class="block py-3">Contact</a>
+
+        </div>
     </nav>
+
+
+
 </div>
+
+<!-- Logic -->
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+    const closeIcon = document.getElementById('closeIcon');
+
+    menuBtn?.addEventListener("click", () => {
+
+        mobileMenu?.classList.toggle("opacity-0");
+
+        mobileMenu?.classList.toggle("scale-95");
+
+        mobileMenu?.classList.toggle("pointer-events-none");
+
+        menuIcon?.classList.toggle("hidden");
+
+        closeIcon?.classList.toggle("hidden");
+    });
+</script>

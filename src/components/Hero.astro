@@ -1,14 +1,18 @@
+---
+import { Mail } from '@lucide/astro';
+---
+
 <div class="flex items-center justify-center min-h-screen" id="home">
     <div class="max-w-7xl flex items-center gap-20 w-full  flex-col-reverse lg:flex-row lg:justify-between">
         <!-- Left -->
         <div class="max-w-2xl text-center lg:text-left">
             <p class="font-medium text-xl">Hi, I'm</p>
 
-            <p class="mt-4 font-extrabold text-4xl lg:text-6xl sm:text-3xl text-primary">Marc Steven Nagamany</p>
+            <p class="mt-4 font-extrabold text-3xl sm:text-5xl lg:text-6xl text-primary">Marc Steven Nagamany</p>
 
             <p class="mt-4 font-medium text-xl italic underline underline-offset-10 text-secondary">Junior Web Developer</p>
 
-            <p class="mt-6">Turning your IDEAS into SCALABLE web applications</p>
+            <p class="mt-6">Creating scalable digital experiences through design and modern web development.</p>
 
             <div class="mt-10 flex gap-5 justify-center lg:justify-start">
                 <a href="#projects"
@@ -25,11 +29,47 @@
                     Resume
                 </a>
             </div>
+
+            <!-- Icons -->
+            <div class="flex items-center gap-2 mt-4 justify-center lg:justify-start">
+                <a
+                    href="https://github.com/tebsss17"
+                    target="_blank"
+                    class="group rounded-xl border border-white/10 bg-[#131722] p-3 transition-all duration-300 hover:-translate-y-1 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                    <img
+                        src="/images/github-dark.svg"
+                        alt="GitHub"
+                        class="size-6 transition-transform duration-300 group-hover:scale-110">
+
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/marc-steven-nagamany-03b2762b5/"
+                    target="_blank"
+                    class="group rounded-xl border border-white/10 bg-[#131722] p-3 transition-all duration-300 hover:-translate-y-1 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                    <img
+                        src="/images/linkedin.svg"
+                        alt="LinkedIn"
+                        class="size-6 transition-transform duration-300 group-hover:scale-110">
+
+                </a>
+
+                <a  
+                    href="mailto:marcstevennagamany17@gmail.com?subject=Portfolio%20Inquiry"
+                    class="group rounded-xl border border-white/10 bg-[#131722] p-3 transition-all duration-300 hover:-translate-y-1 hover:border-[#5290DA] hover:bg-[#1D4E89]/20">
+
+                    <Mail class="size-6 transition-transform duration-300 group-hover:scale-110"/>
+
+                </a>
+
+            </div>
         </div>
 
         <!--Right -->
         <div class="relative">
-            <div class="absolute inset-2 rounded-xl blur-2xl bg-white/85 animate-pulse ">
+            <div class="absolute inset-0 rounded-xl blur-2xl bg-white/85 animate-pulse ">
 
             </div>
 
@@ -38,5 +78,7 @@
                 alt="Marc Steven"
                 class="relative rounded-xl size-64 object-cover sm:h-80 sm:w-80 lg:h-[450px] lg:w-[450px]">
         </div>
+        
+        
     </div>
 </div>
